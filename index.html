@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tony Nguyen — Co-op Work Term Report 1 — Momentum Worldwide (Fall 2025)</title>
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root{
+      /* Salesforce-inspired colors */
+      --sf-blue: #00A1E0;
+      --sf-blue-dark: #0176D3;
+      --sf-navy: #032D60;
+      --sf-bg: #F6F9FC;
+      --sf-border: rgba(3,45,96,.14);
+      --sf-soft: rgba(0,161,224,.10);
+      --radius: 16px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body{
+      background: var(--sf-bg);
+      color: #102A43;
+    }
+
+    .navbar{
+      background: #fff;
+      border-bottom: 1px solid var(--sf-border);
+    }
+
+    .brand-dot{
+      width: 12px; height: 12px; border-radius: 999px;
+      background: var(--sf-blue);
+      display: inline-block;
+      box-shadow: 0 0 0 4px rgba(0,161,224,.15);
+    }
+
+    .hero{
+      background: linear-gradient(120deg, var(--sf-navy), var(--sf-blue-dark) 55%, var(--sf-blue));
+      color: #fff;
+    }
+
+    .card{
+      border: 1px solid var(--sf-border);
+      border-radius: var(--radius);
+    }
+
+    .section-title{
+      color: var(--sf-navy);
+      font-weight: 800;
+      letter-spacing: -0.01em;
+    }
+
+    .img-ph{
+      border-radius: var(--radius);
+      border: 1px dashed rgba(3,45,96,.28);
+      background: linear-gradient(135deg, rgba(0,161,224,.10), rgba(1,118,211,.07));
+      min-height: 180px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color: rgba(3,45,96,.75);
+      font-weight: 700;
+    }
+
+    .caption{
+      font-size: .92rem;
+      color: rgba(3,45,96,.72);
+    }
+
+    .pill{
+      display:inline-block;
+      padding: .35rem .65rem;
+      border-radius: 999px;
+      background: var(--sf-soft);
+      border: 1px solid rgba(0,161,224,.22);
+      color: var(--sf-white);
+      font-weight: 600;
+      font-size: .9rem;
+      margin-right: .4rem;
+      margin-bottom: .4rem;
+    }
+
+    .anchor-offset{
+      scroll-margin-top: 86px;
+    }
+
+    .footer{
+      border-top: 1px solid var(--sf-border);
+      background: #fff;
+    }
+
+    /* Make bold stand out slightly without shouting */
+    strong { color: #0B2E5E; }
+  </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#top">
+      <span class="brand-dot"></span>
+      Tony Nguyen — Co-op Work Term Report 1
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#intro">Introduction</a></li>
+        <li class="nav-item"><a class="nav-link" href="#employer">Employer</a></li>
+        <li class="nav-item"><a class="nav-link" href="#goals">Goals</a></li>
+        <li class="nav-item"><a class="nav-link" href="#job">Job</a></li>
+        <li class="nav-item"><a class="nav-link" href="#conclusion">Conclusions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ack">Acknowledgments</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header id="top" class="hero py-5">
+  <div class="container py-2">
+    <div class="row g-3 align-items-center">
+      <div class="col-lg-8">
+        <h1 class="display-6 fw-bold mb-2">Momentum Worldwide — Fall 2025</h1>
+        <p class="mb-3">
+          Data Analyst co-op focused on <b>cleaning</b>, <b>validating</b>, and <b>importing</b>
+          legacy CRM data into <b>Salesforce</b>.
+        </p>
+        <div>
+          <span class="pill">Remote (Hybrid-Optional)</span>
+          <span class="pill">Salesforce CRM</span>
+          <span class="pill">Data Migration</span>
+          <span class="pill">Excel • SQL • Python</span>
+          <span class="pill">Jira • Clockify</span>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="card bg-white bg-opacity-10 border border-white border-opacity-25 text-white">
+          <div class="card-body">
+            <div class="fw-semibold">Work Term Details</div>
+            <div class="small opacity-90 mt-2">Start date: <strong class="text-white">August 25</strong></div>
+            <div class="small opacity-90">Location: <strong class="text-white">Remote</strong> (Toronto-based team)</div>
+            <div class="small opacity-90">Role: <strong class="text-white">Data Analyst</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- Introduction -->
+  <section id="intro" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Abstract / Introduction</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                This website serves as my official co-op work term report for the <strong>Fall 2025</strong> term at the University of Guelph.
+                My goal is to provide readers with a <strong>clear</strong>, <strong>honest</strong>, and <strong>engaging</strong> account of
+                what I learned, how I grew, and what it means to work with <strong>real-world data</strong> in a professional
+                <strong>Salesforce consulting</strong> environment.
+              </p>
+
+              <p>
+                I completed my work term at <strong>Momentum Worldwide</strong>, where I worked remotely in a hybrid-optional role as a
+                <strong>Data Analyst</strong>. My term began on <strong>August 25th</strong> and focused on preparing, transforming, validating,
+                and importing client data from <strong>legacy CRM systems</strong> into <strong>Salesforce</strong>. Through this experience,
+                I gained hands-on exposure to <strong>data migration workflows</strong>, Salesforce’s <strong>data model</strong>, and the importance
+                of <strong>clean, well-structured information</strong> in real business and nonprofit contexts.
+              </p>
+
+              <p class="mb-0">
+                I hope readers come away from this report with an understanding of how <strong>technical skills</strong>,
+                <strong>communication</strong>, and <strong>quantitative reasoning</strong> intersect in industry—and how much growth can happen
+                when theory meets practice. I also gained exposure to professional workflow tools used in many workplaces, including
+                <strong>Jira</strong> for tracking tasks and project progress, and <strong>Clockify</strong> for work-hour reporting and accountability.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card p-3">
+            <img src="img/abstract.png" alt="Salesforce logo" class="img-fluid rounded-4 border">
+            <div class="caption mt-2">
+              <strong>Image:</strong><em> Salesforce CRM</em>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Employer -->
+  <section id="employer" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Information About the Employer</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <div class="card p-3">
+            <img src="img/employer.png" alt="Momentum company logo" class="img-fluid rounded-4 border">
+            <div class="caption mt-2">
+              <strong>Image:</strong> The company, Momentum.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                <strong>Momentum Worldwide</strong> is a <strong>Salesforce consulting firm</strong> that specializes in designing, implementing,
+                and supporting customized Salesforce solutions for a variety of clients. Their work spans <strong>data migration</strong>,
+                <strong>system integration</strong>, <strong>analytics</strong>, <strong>automation</strong>, and long-term platform optimization.
+              </p>
+
+              <p>
+                Operating within the Salesforce ecosystem places Momentum at the intersection of several computer science domains, including
+                <strong>cloud computing</strong>, <strong>data engineering</strong>, <strong>AI-driven analytics</strong>, and
+                <strong>systems integration</strong>. Their toolset includes technologies such as <strong>Salesforce Data Cloud</strong>,
+                <strong>Einstein AI</strong>, <strong>MuleSoft</strong>, and <strong>Tableau</strong>, all of which rely on robust back-end data
+                pipelines and sophisticated system architecture.
+              </p>
+
+              <p class="mb-0">
+                Based in <strong>Toronto, Ontario</strong>, Momentum is a small but highly specialized team of approximately <strong>20 people</strong>.
+                This size creates a <strong>collaborative environment</strong> where junior team members are exposed to real client work early on.
+                The company’s services include custom Salesforce implementations, migration from legacy CRMs, analytics solutions, and ongoing training
+                and support. What stood out most to me was how deeply <strong>technical accuracy</strong> and <strong>human communication</strong>
+                were intertwined—clean data only matters if people can understand and use it. On the delivery side, tasks were often structured and
+                tracked through <strong>Jira</strong>, and time was reported through <strong>Clockify</strong>, both of which reinforced professional
+                project discipline.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Goals -->
+  <section id="goals" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Goals</h2>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <h5 class="fw-bold mb-3">What were your goals / learning outcomes for this work term?</h5>
+          <p class="mb-2">My primary learning goals were:</p>
+
+          <ul class="mb-0">
+            <li class="mb-2">
+              <strong>Communication:</strong>
+              Develop the ability to explain complex data findings, Salesforce data relationships, and technical processes clearly and confidently
+              to both technical and non-technical audiences.
+            </li>
+            <li class="mb-2">
+              <strong>Salesforce CRM Mastery:</strong>
+              Build a strong working knowledge of Salesforce—specifically the <strong>Account</strong>, <strong>Contact</strong>, and <strong>Gift</strong>
+              data models—to design, validate, and implement clean data integrations.
+            </li>
+            <li>
+              <strong>Quantitative Literacy:</strong>
+              Enhance my ability to interpret, analyze, and present quantitative information using <strong>Excel</strong>, <strong>SQL</strong>, and
+              <strong>Python</strong> to support data-driven decision-making.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="fw-bold">Did you develop goals relating to your job tasks?</h5>
+              <p class="mb-0">
+                Yes. Each of these goals directly reflected the real expectations of my role. My work required me to explain technical decisions
+                to clients, manipulate large datasets responsibly, and understand how Salesforce structures relationships between objects. Rather
+                than being abstract, these goals were tied to daily responsibilities. Keeping tasks updated in <strong>Jira</strong> helped ensure
+                my day-to-day work stayed aligned with project priorities and deadlines.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="fw-bold">What skills did you want to learn? How will these benefit your next work experience?</h5>
+              <p>
+                This work term helped me develop both <strong>technical</strong> and <strong>professional</strong> skills.
+              </p>
+              <p>
+                On the technical side, I strengthened my ability to <strong>clean</strong>, <strong>validate</strong>, and <strong>transform</strong>
+                messy real-world datasets. I learned how CRM systems structure information, how migrations are planned, and how errors propagate if left unchecked.
+              </p>
+              <p class="mb-0">
+                On the professional side, I learned how to communicate clearly, ask better questions, document my work, and operate independently. I also
+                learned how to receive feedback constructively and adapt quickly. These skills will directly benefit my next work experience by allowing me to
+                onboard faster, communicate more confidently, and contribute meaningfully from the start. Accurate time logging through <strong>Clockify</strong>
+                also helped me build a habit of accountability and better estimation for similar tasks in the future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-1">
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="fw-bold">What technologies did you want to work with and why?</h5>
+              <p>
+                I was particularly interested in working with <strong>Salesforce</strong> because I wanted to understand why CRM platforms are so central
+                to modern organizations. Cloud-based systems, customer data pipelines, and large-scale automation were all unfamiliar to me before this role.
+              </p>
+              <p class="mb-0">
+                Rather than choosing Salesforce because it is popular, I chose it because it was unknown. I wanted to understand how real companies store, move,
+                and use data—and how mistakes in these systems can have real consequences. Momentum gave me the opportunity to see how Salesforce is actually used
+                in practice, not just in theory. I also gained exposure to how teams operate in practice—planning and tracking work in <strong>Jira</strong> and
+                recording effort accurately with <strong>Clockify</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="fw-bold">Reflecting on your goals, what goals did you complete?</h5>
+              <p class="mb-2">I successfully completed all three learning goals.</p>
+              <ul class="mb-0">
+                <li>I became more confident in communicating technical information.</li>
+                <li>I developed a strong practical understanding of Salesforce’s data model.</li>
+                <li>I became more comfortable working with large datasets using Excel, SQL, and Python.</li>
+              </ul>
+              <p class="mt-3 mb-0">
+                Some goals were achieved more deeply than others, but each one showed measurable growth. Maintaining clear progress updates in <strong>Jira</strong>
+                and tracking hours in <strong>Clockify</strong> helped reinforce consistency, planning, and professional accountability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-1">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="fw-bold">What goals were you not successful in completing and why?</h5>
+              <p class="mb-0">
+                While I met my goals overall, I did not engage as deeply with formal <strong>Salesforce Trailhead</strong> modules as originally planned.
+                This was primarily due to time constraints and the fact that hands-on project work became my main learning method. Instead of structured modules,
+                I learned through direct application, documentation, and problem-solving. Although this diverged from my original plan, it ultimately resulted in
+                deeper practical understanding.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Job Description -->
+  <section id="job" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Job Description</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                My role at <strong>Momentum Worldwide</strong> was <strong>Data Analyst</strong>, with a focus on <strong>data migration</strong> and
+                <strong>quality assurance</strong> for Salesforce implementations.
+              </p>
+
+              <p>
+                I worked with client datasets extracted from legacy CRMs. These datasets were often inconsistent, incomplete, or incorrectly formatted.
+                My job was to clean, restructure, validate, and prepare this data so it could be safely imported into Salesforce without breaking relationships
+                between objects.
+              </p>
+
+              <p class="mb-2">Some of the most interesting aspects of my job included:</p>
+              <ul>
+                <li><strong>Designing mappings</strong> between old and new systems</li>
+                <li>Creating <strong>deduplication logic</strong></li>
+                <li>Detecting <strong>structural inconsistencies</strong></li>
+                <li>Troubleshooting <strong>import errors</strong></li>
+                <li>Writing <strong>Python scripts</strong> for automated quality checks</li>
+                <li>Using <strong>SQL</strong> to validate record relationships</li>
+                <li>Communicating findings to teammates and clients</li>
+              </ul>
+
+              <p class="mb-0">
+                Most of these skills were learned on the job. While my coursework gave me foundational exposure to databases and programming, this role taught me
+                how those skills are used in real production environments. Tasks were often broken down and tracked in <strong>Jira</strong>, which helped make
+                priorities and blockers visible, and work hours were recorded through <strong>Clockify</strong>, reinforcing real-world consulting habits.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card p-3">
+            <img src="img/jobdescription.png" alt="Overview of a data analyst at Momentum" class="img-fluid rounded-4 border">
+            <div class="caption mt-2">
+              <strong>Image:</strong> <em>Export → Clean → Validate → Import</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conclusions -->
+  <section id="conclusion" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Conclusions</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                If someone were asked to describe this website, I would want them to say that it demonstrates growth—technically, professionally, and personally.
+              </p>
+
+              <p>
+                This work term taught me that data is not just numbers in a spreadsheet. It represents people, transactions, histories, and relationships.
+                Mistakes matter. Clarity matters. Communication matters.
+              </p>
+
+              <p>
+                Momentum helped me understand what it means to be responsible for data that real organizations depend on. I learned to slow down, verify assumptions,
+                and think critically about every transformation I made.
+              </p>
+
+              <p class="mb-0">
+                More than anything, this experience gave me confidence that I can contribute meaningfully in technical environments—and that learning does not stop when
+                the code runs successfully. I also gained practical experience with how teams stay organized and accountable in professional settings, using tools like
+                <strong>Jira</strong> for coordination and <strong>Clockify</strong> for accurate reporting.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card p-3">
+            <img src="img/conclusion.png" alt="Learnings from working as a data analyst" class="img-fluid rounded-4 border">
+            <div class="caption mt-2">
+              <strong>Image:</strong> Validate early. Communicate clearly. Import confidently.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Acknowledgments -->
+  <section id="ack" class="anchor-offset py-5">
+    <div class="container">
+      <h2 class="section-title mb-3">Acknowledgments</h2>
+
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card">
+            <div class="card-body">
+              <p>
+                I would like to thank my supervisor, Matthew Skogstad-Stubbs, and the Momentum Worldwide team for their patience, guidance, and trust throughout this term. Their willingness
+                to answer questions, explain decisions, and let me take ownership of real tasks made this experience incredibly valuable.
+              </p>
+
+              <p class="mb-0">
+                I am especially grateful for the mentorship I received during my early weeks of shadowing. That foundation allowed me to grow into a more independent
+                and confident contributor by the end of the term.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="card p-3">
+            <img src="img/acknowledgement.png" alt="Thank You card to team at Momentum" class="img-fluid rounded-4 border">
+            <div class="caption mt-2">
+              <strong>Image:</strong> Thank You to the highly motivated and very hard-working team at Momentum!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer py-4">
+  <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+    <div class="small text-body-secondary">
+      © Tony Nguyen — Co-op Work Term Report 1
+    </div>
+    <a class="small text-decoration-none" href="#top" style="color: var(--sf-blue-dark); font-weight: 700;">
+      Back to top ↑
+    </a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+```
